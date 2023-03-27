@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Logo</a>
+    <ul class="navegation">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="parallax">
+    <h2 id="text">Parallax site</h2>
+    <img src="./img/monutain_01.png" id="m1">
+    <img src="./img/trees_02.png" id="t2">
+    <img src="./img/monutain_02.png" id="m2">
+    <img src="./img/trees_01.png" id="t1">
+    <img src="./img/man.png" id="man">
+    <img src="./img/plants.png" id="plants">
+  </section>
+
+  <section class="sec">
+    <h2>Parallax Scrolling Website</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non maxime, animi, nesciunt debitis magni est distinctio illum ullam expedita architecto, molestias qui eveniet odit sint dolore. Illum, impedit cumque. <br><br> Quasi mollitia ut maxime vitae, sequi, repudiandae delectus eum blanditiis reiciendis libero perferendis, rerum sed non accusantium at eius aspernatur tempora eveniet dicta! Velit at delectus exercitationem enim maiores distinctio ullam perspiciatis, cumque veniam quo aspernatur in magnam quibusdam illo ut quia eum rerum laboriosam? Quis temporibus repellendus, quod officia, autem nesciunt in earum inventore minima sequi non molestias aliquid ipsum. Officia in voluptatem tempore optio consequuntur magnam ab suscipit esse libero vero accusantium, ducimus fugiat quibusdam magni ratione est, cumque velit? Expedita consectetur qui voluptates doloremque quisquam laborum, deserunt facilis hic doloribus iusto ipsam commodi reprehenderit, laboriosam animi non a perferendis sequi? Iure iusto aliquid veniam totam dolorem maiores eaque, non expedita dignissimos quasi architecto ad eum laudantium vero harum reiciendis! Earum et autem officia maxime, atque quas quam? <br><br> Excepturi cum doloribus enim nulla velit optio sint dolor vero, saepe perspiciatis molestiae recusandae obcaecati illum, praesentium veritatis expedita ratione laboriosam tempore quisquam corrupti quas natus. Eaque ipsam quisquam repudiandae, in officiis amet velit vero nesciunt nemo debitis alias sint eius praesentium dolores sapiente laudantium! Enim mollitia libero necessitatibus, dolorem amet, sapiente rem delectus expedita eveniet neque corporis error culpa animi itaque quo? Ratione autem eum voluptatibus voluptatem.</p>
+  </section>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.from("#m1",{
+      scrollTrigger : {
+        scrub: true
+      },
+      y: 100,
+    })
+    gsap.from("#m2",{
+      scrollTrigger : {
+        scrub: true
+      },
+      y: 50,
+    })
+    gsap.from("#t2",{
+      scrollTrigger : {
+        scrub: true
+      },
+      x: -50,
+    })
+    gsap.from("#t1",{
+      scrollTrigger : {
+        scrub: true
+      },
+      x: 50,
+    })
+    gsap.from("#man",{
+      scrollTrigger : {
+        scrub: true
+      },
+      x: -250,
+    })
+    gsap.from("#plants",{
+      scrollTrigger : {
+        scrub: true
+      },
+      x: -50,
+    })
+    gsap.from("#text",{
+      scrollTrigger : {
+        scrub: true
+      },
+      x: 400,
+    })
+  </script>
+</body>
+</html>
